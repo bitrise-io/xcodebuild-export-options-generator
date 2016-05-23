@@ -16,7 +16,7 @@ Generators available for:
 
 # How to use?
 
-* Create `export_options` folder and copy the `Gemfile` and a required generator to your repo
+* Create `export-options` folder and copy the `Gemfile` and a required generator to your repo
 * Install `plist` gem with bundle: `BUNDLE_GEMFILE=export_options/Gemfile bundle install`
 * Run the generator with bundle:  
 
