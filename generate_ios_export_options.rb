@@ -96,12 +96,10 @@ log_fail('archive_path not specified') if options[:archive_path].to_s == ''
 
 mobileprovision_content = collect_provision_info(options[:archive_path])
 method = export_method(mobileprovision_content)
-# export_options[:teamID] = team_id unless team_id.nil?
 
-log_info("Creating export options for export type: #{export_options[:method]}")
+log_info("Creating export options for export type: #{method}")
 
 export_options = {}
-# export_options[:teamID] = team_id unless team_id.nil?
 export_options[:method] = method unless method.nil?
 
 plist_content = Plist::Emit.dump(export_options)
